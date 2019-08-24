@@ -1,0 +1,291 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SelfChat.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SelfChat.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SelfChat"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    CTEXT           "聊天室客户端（SelfChat，1.0 版）",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    CTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SELFCHAT_DIALOG DIALOGEX 0, 0, 370, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "聊天室客户端-SelfChat"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,270,194,32,12,NOT WS_TABSTOP
+    LTEXT           "昵称",IDC_STATIC,14,19,28,8
+    LTEXT           "聊天室IP",IDC_STATIC,14,34,28,8
+    EDITTEXT        IDC_EDIT1,46,17,83,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,46,32,97,12
+    EDITTEXT        IDC_EDIT2,46,47,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "端口",IDC_STATIC,27,49,15,8
+    GROUPBOX        "个人",IDC_STATIC,7,5,142,199
+    GROUPBOX        "在线好友",IDC_STATIC,12,63,57,136
+    PUSHBUTTON      "进入",IDC_BUTTON1,89,56,40,12
+    PUSHBUTTON      "离开",IDC_BUTTON2,89,68,40,12
+    LISTBOX         IDC_LIST1,14,71,52,125,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,161,17,195,155,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL,WS_EX_CLIENTEDGE
+    GROUPBOX        "聊天",IDC_STATIC,155,7,208,184
+    EDITTEXT        IDC_EDIT4,161,175,146,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送",IDC_BUTTON3,306,175,29,12
+    PUSHBUTTON      "清屏",IDC_BUTTON4,335,175,21,12
+    PUSHBUTTON      "关于",IDC_BUTTON5,239,194,32,12
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,78,182,61,15
+    GROUPBOX        "音乐",IDC_STATIC,72,86,71,92
+    EDITTEXT        IDC_filename,75,100,64,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_filechoice,82,116,50,14
+    PUSHBUTTON      "播放",IDC_play,83,132,18,14
+    LTEXT           "音量",IDC_STATIC,75,148,16,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,158,55,15
+    PUSHBUTTON      "暂停",IDC_pause,110,132,18,14
+    EDITTEXT        IDC_volume,105,149,20,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 278, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,59,30,35,8
+    EDITTEXT        IDC_EDIT1,108,28,119,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,59,55,27,8
+    EDITTEXT        IDC_EDIT2,108,51,120,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登陆",IDOK,45,79,50,14
+    PUSHBUTTON      "注册",IDC_BUTTON1,110,79,50,14
+    PUSHBUTTON      "退出",IDCANCEL,176,79,50,14
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 239, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "注册",IDOK,50,85,50,14
+    PUSHBUTTON      "返回",IDCANCEL,146,84,50,14
+    EDITTEXT        IDC_EDIT1,72,31,122,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,72,56,122,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "账号：",IDC_STATIC,46,34,27,8
+    LTEXT           "密码：",IDC_STATIC,46,59,27,8
+    CONTROL         "男",IDC_RADIO_MAN,"Button",BS_AUTORADIOBUTTON,76,73,25,10
+    CONTROL         "女",IDC_RADIO_WOMAN,"Button",BS_AUTORADIOBUTTON,125,73,25,10
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 317, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "私聊"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,246,152,50,14
+    EDITTEXT        IDC_EDIT2,7,129,303,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送",IDC_BUTTON1,177,153,50,14
+    PUSHBUTTON      "清屏",IDC_BUTTON2,30,153,50,14
+    EDITTEXT        IDC_EDIT1,7,7,303,112,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SelfChat.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "SelfChat.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SELFCHAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 SelfChat(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SelfChat.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
